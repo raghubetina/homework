@@ -25,7 +25,7 @@ class TestCalculations < Test::Unit::TestCase
     moves = [3, 5, 1, 2, 4, 6, 1]
     points = calculate_points_from_moves(moves)
 
-    assert_equal(40, points)
+    assert_equal 40, points
   end
 
   def test_calculate_points_for_player

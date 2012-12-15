@@ -9,16 +9,16 @@ require "test/unit"
 # ----------------------
 
 class Player
-  
+
   SCORING_RULES = { 1 => 1, 2 => 2, 3 => 4, 4 => 7, 5 => 10, 6 => 15 }
 
   attr_accessor :name, :points
-  
+
   def initialize(player_name)
     self.name = player_name
     self.points = 0
   end
-  
+
 end
 
 class TestPlayer < Test::Unit::TestCase
@@ -26,12 +26,12 @@ class TestPlayer < Test::Unit::TestCase
   def test_total_points
     player = Player.new("Bob")
     moves = [3, 5, 1, 2, 4, 6, 1]
-    
+
     moves.each do |train_size|
       player.move(train_size)
     end
-    
+
     assert_equal(40, player.points)
   end
-    
+
 end

@@ -1,0 +1,8 @@
+task :test do
+  run_cmd = FileList['*.rb'].map { |f| "require \"#{File.expand_path(f)}\";" }.join
+  puts `ruby -e '#{run_cmd}' -- -v`
+  puts "CONGRATULATIONS!  All tests pass." if ($? == 0)
+end
+
+task :default => :test
+
