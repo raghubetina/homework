@@ -2,10 +2,11 @@
 
 See the live solution at http://cspp52553-week3.herokuapp.com/contacts
 
-The visual appearance can be different but the requirements are:
+Your app's visual appearance can be different, but the requirements are:
 
-1. /contacts must show a page listing your contact information.
+1. http://localhost:3000/contacts must show a page listing your contact information.
 2. Each contact must be a row in a table.
 3. Each row should have two columns: name and twitter address.
 4. /contacts/new must present a form for adding a new contact.
 5. Submitting a new contact must add it to the list of contacts.
+6. Going to http://localhost:3000 must access the same resource as /contacts
