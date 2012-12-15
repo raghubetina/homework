@@ -1,0 +1,5 @@
+= Week 1 Homework
+
+This week, you'll get practice at writing Ruby class instance methods, convert JSON strings into hashes, and manipulate data contained in Ruby arrays and hashes.
+
+

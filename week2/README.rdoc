@@ -1,0 +1,14 @@
+= Week 2 Homework
+
+This week, you'll use a Rails app to generate web pages on a local server.
+
+Remember these key ideas:
+
+* Routes map an incoming url path to a specific controller instance method.
+* Controller instance methods must render a response.
+* They can render a response explicitly or implicitly (using a view template).
+
+In order for the tests to pass, be sure to have your app running on port 3000 in a separate Terminal tab while you rake the tests.
+
+
+
