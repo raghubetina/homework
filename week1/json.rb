@@ -20,8 +20,7 @@ class TestJSON < Test::Unit::TestCase
 
   def test_parse_from_string
     json = '{"favorites":{"color":"maroon","fruit":"apple","language":"ruby"}}'
-    # assert_equal('apple', get_favorite("fruit", json))
-    assert true
+    assert_equal('apple', get_favorite("fruit", json))
   end
 
   def test_generate_from_data
@@ -29,7 +28,7 @@ class TestJSON < Test::Unit::TestCase
               baseball: [:cubs, :sox] }
 
     team_json = '{"football":["bears","packers","vikings"],"baseball":["cubs","sox"]}'
-    # assert_equal team_json, generate_json_from_hash(teams)
+    assert_equal team_json, generate_json_from_hash(teams)
   end
 
 end
