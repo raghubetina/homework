@@ -1,12 +1,13 @@
 = Week 3 Homework
 
-See the live solution at http://cspp52553-week3.herokuapp.com/contacts
+See the live app at http://cspp52553-week3.herokuapp.com/contacts
 
-Your app's visual appearance can be different, but the requirements are:
+Your app's visual appearance is mostly up to you, but the requirements are:
 
-1. http://localhost:3000/contacts must show a page listing your contact information.
-2. Each contact must be a row in a table.
-3. Each row should have two columns: name and twitter address.
-4. /contacts/new must present a form for adding a new contact.
-5. Submitting a new contact must add it to the list of contacts.
-6. Going to http://localhost:3000 must access the same resource as /contacts
+1. You must name your controller class "ContactsController".
+2. http://localhost:3000/contacts must show a page listing your contact information.
+3. Each contact must be a row in a table.
+4. Each row should have two columns: name and twitter address.
+5. /contacts/new must present a form for adding a new contact.
+6. Submitting a new contact must add it to the list of contacts.
+7. Going to http://localhost:3000 must access the same resource as /contacts
