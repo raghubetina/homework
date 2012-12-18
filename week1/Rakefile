@@ -1,7 +1,14 @@
 task :test do
+  puts "Grading your homework..."
   run_cmd = FileList['*.rb'].map { |f| "require \"#{File.expand_path(f)}\";" }.join
-  puts `ruby -e '#{run_cmd}'`
-  puts "CONGRATULATIONS!  All tests pass." if ($? == 0)
+  output = `ruby -e '#{run_cmd}'`
+  status = $?.exitstatus
+  if (status == 0)
+    puts "CONGRATULATIONS!  All tests pass."
+  else
+    puts "#{status} assertions have failed!"
+    puts output
+  end
 end
 
 task :default => :test

@@ -2,12 +2,15 @@
 
 See the live app at http://cspp52553-week3.herokuapp.com/contacts
 
+== Requirements
+
 Your app's visual appearance is mostly up to you, but the requirements are:
 
+1. Open the UserInputApp that's already been started for you in this folder.
 1. You must name your controller class "ContactsController".
 2. http://localhost:3000/contacts must show a page listing your contact information.
 3. Each contact must be a row in a table.
 4. Each row should have two columns: name and twitter address.
-5. /contacts/new must present a form for adding a new contact.
-6. Submitting a new contact must add it to the list of contacts.
+5. http://localhost:3000/contacts/new must display a form for adding a new contact.
+6. Submitting a new contact must result in displaying the same contacts as in Step 2 *plus* the newly-added contact.
 7. Going to http://localhost:3000 must access the same resource as /contacts
