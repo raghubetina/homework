@@ -2,13 +2,26 @@
 
 This week, you'll use a Rails app to generate web pages on a local server.
 
-Remember these key ideas:
+*In order for the tests to pass, be sure to have your app running on port 3000 in a separate Terminal tab while you run the tests.*
+
+== Requirements
+
+Create a Rails application that:
+
+* Uses a controller to display a few of your favorite things in an HTML unordered list.
+* You can choose any url path you want for the page, like "/my_favorites".
+* You must name the route "favorites".
+* Going to the home page should display the same content as the page-specific url. Redirects are not allowed.
+
+== Remember these key ideas:
 
 * Routes map an incoming url path to a specific controller instance method.
+* Routes can be named.  Named routes provide view helper methods you can use instead of hardcoding URL strings into your view templates.
 * Controller instance methods must render a response.
 * They can render a response explicitly or implicitly (using a view template).
 
-In order for the tests to pass, be sure to have your app running on port 3000 in a separate Terminal tab while you rake the tests.
+
+
 
 
 

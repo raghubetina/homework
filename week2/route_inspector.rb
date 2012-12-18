@@ -1,7 +1,7 @@
 require 'open-uri'
 
 # This Ruby class is used by some of the other tests this week.
-# Don't touch this code, or your tests might give you false positives.
+# Don't touch this code, or your tests might give you false results.
 class RouteInspector
   attr_accessor :routes
 
@@ -9,7 +9,11 @@ class RouteInspector
     @routes = []
     rows = rake_route_string.split("\n")
     rows.map do |row|
-      @routes << (row.split.map { |piece| piece.strip })
+      route = row.split.map { |piece| piece.strip }
+      if route.size == 3
+        route = [route[0], 'GET', route[1], route[2]]
+      end
+      @routes << route
     end
   end
 
@@ -19,11 +23,12 @@ class RouteInspector
       self.routes.detect { |route| route.first == named_route }
     else
       url = url_or_name
-      self.routes.detect do |route|
-        searchable_route = route.third.gsub(/:[^\/]+/,'[^/]+')
-        searchable_route = searchable_route.sub(':format', '[^/]*')
-        url =~ /#{searchable_route}/
+      route = self.routes.detect do |route|
+        searchable_route = route[2].gsub(/:[^\/]+/,'[^/]+')
+        searchable_route = searchable_route.sub('(.+)', '[^/]*')
+        url =~ /^#{searchable_route}$/
       end
+      return route
     end
   end
 
@@ -38,4 +43,4 @@ class RouteInspector
   end
 end
 
-puts RouteInspector.get_from_app.routes.inspect
+# puts RouteInspector.get_from_app.routes.inspect
