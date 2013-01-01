@@ -13,7 +13,9 @@ For more details, see the homework.pdf that's in this folder.
 If you have any questions, feel free to contact me or one of the TAs.
 
 jeff@cs.uchicago.edu
+
 raghu@starterleague.com
+
 brian@starterleague.com
 
 ---
