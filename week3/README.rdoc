@@ -7,7 +7,7 @@ See the live app at http://cspp52553-week3.herokuapp.com/contacts
 Your app's visual appearance is mostly up to you, but the requirements are:
 
 1. Open the UserInputApp that's already been started for you in this folder.
-1. You must name your controller class "ContactsController".
+1. Create a controller named ContactsController.
 2. http://localhost:3000/contacts must show a page listing your contact information.
 3. Each contact must be a row in a table.
 4. Each row should have two columns: name and twitter address.

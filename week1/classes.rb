@@ -8,6 +8,8 @@ require "test/unit"
 # Do NOT change any of the code in the TestPlayer class. :-)
 # ----------------------
 
+# CHANGE THIS CODE TO MAKE THE TESTS PASS
+
 class Player
 
   SCORING_RULES = { 1 => 1, 2 => 2, 3 => 4, 4 => 7, 5 => 10, 6 => 15 }

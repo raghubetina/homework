@@ -1,8 +1,8 @@
 = Week 2 Homework
 
-This week, you'll use a Rails app to generate web pages on a local server.
+This week, you'll create a Rails app that can generate web pages on a local server.
 
-*In order for the tests to pass, be sure to have your app running on port 3000 in a separate Terminal tab while you run the tests.*
+*In order for the homework tests to pass, be sure to have your app running on port 3000 in a separate Terminal tab while you run the tests.*
 
 == Requirements
 

@@ -10,7 +10,7 @@ require "test/unit"
 
 SCORING_RULES = { 1 => 1, 2 => 2, 3 => 4, 4 => 7, 5 => 10, 6 => 15 }
 
-# MODIFY THESE METHODS TO MAKE THE TESTS PASS
+# CHANGE THIS CODE TO MAKE THE TESTS PASS
 def calculate_points_from_moves
 end
 
