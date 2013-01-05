@@ -11,10 +11,12 @@ require "test/unit"
 SCORING_RULES = { 1 => 1, 2 => 2, 3 => 4, 4 => 7, 5 => 10, 6 => 15 }
 
 # CHANGE THIS CODE TO MAKE THE TESTS PASS
-def calculate_points_from_moves
+def calculate_points_from_moves(moves)
+  moves.reduce(0) { |points, train_length| points + SCORING_RULES[train_length] }
 end
 
 def calculate_points_for_player(player, data)
+  calculate_points_from_moves data[player]
 end
 
 # ----------------------------------------------------------

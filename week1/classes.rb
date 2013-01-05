@@ -21,6 +21,10 @@ class Player
     self.points = 0
   end
 
+  def move(train_size)
+    self.points += SCORING_RULES[train_size]
+  end
+
 end
 
 class TestPlayer < Test::Unit::TestCase
